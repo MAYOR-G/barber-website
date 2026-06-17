@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { siteContent } from '../data/siteContent';
 
@@ -16,7 +15,6 @@ export default function About() {
           <img 
             src={siteContent.about.image} 
             alt="Modern barber studio interior with a professional styling chair"
-            loading="lazy"
             decoding="async"
             className="w-full aspect-[4/5] object-cover rounded-sm shadow-2xl"
           />
@@ -36,7 +34,7 @@ export default function About() {
             {siteContent.about.text}
           </p>
           <div className="mt-12">
-            <img src="/studio-signature.svg" alt="Studio founder signature" loading="lazy" decoding="async" className="h-16 opacity-50 invert" />
+            <img src="/studio-signature.svg" alt="Studio founder signature" decoding="async" className="h-16 opacity-50 invert" />
           </div>
         </motion.div>
       </div>

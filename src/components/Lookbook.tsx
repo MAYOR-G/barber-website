@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { siteContent } from '../data/siteContent';
 
@@ -32,7 +31,6 @@ export default function Lookbook() {
               <img 
                 src={item.image} 
                 alt={item.name} 
-                loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

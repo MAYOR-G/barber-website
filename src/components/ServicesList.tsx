@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteContent } from '../data/siteContent';
 
@@ -57,7 +57,6 @@ export default function ServicesList() {
                   transition={{ duration: 0.4 }}
                   className="absolute inset-0 w-full h-full object-cover rounded-sm"
                   alt={`${siteContent.services[hoveredIndex].name} service preview`}
-                  loading="lazy"
                   decoding="async"
                 />
               ) : (

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { siteContent } from '../data/siteContent';
 import { ArrowRightLeft } from 'lucide-react';
@@ -31,7 +30,6 @@ export default function Transformations() {
               <img 
                 src={item.before} 
                 alt={`Before ${item.label}`} 
-                loading="lazy"
                 decoding="async"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -44,7 +42,6 @@ export default function Transformations() {
                 <img 
                   src={item.after} 
                   alt={`After ${item.label}`} 
-                  loading="lazy"
                   decoding="async"
                   className="absolute inset-0 w-full h-full object-cover"
                 />

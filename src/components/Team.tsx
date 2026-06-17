@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { siteContent } from '../data/siteContent';
 
@@ -30,7 +29,6 @@ export default function Team() {
                 <img 
                   src={member.image} 
                   alt={`${member.name}, ${member.specialty}`} 
-                  loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                 />
